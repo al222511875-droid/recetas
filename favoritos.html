@@ -1,14 +1,25 @@
-<html lang="en">
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador Recetas Comida</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #D2B48C !important;
+        }
+        .navbar-custom {
+            background-color: #8A9A5B !important;
+        }
+        .toast-header-custom {
+            background-color: #B38B6D !important;
+        }
+    </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient p-3">
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom bg-gradient p-3">
         <div class="container-fluid">
             <a class="navbar-brand fs-4" href="index.html">Buscador de Recetas</a>
 
@@ -22,14 +33,12 @@
                         <a class="nav-link fs-4" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-4 active" aria-current="page"  href="favoritos.html">Mis Favoritos</a>
+                        <a class="nav-link fs-4 active" aria-current="page" href="favoritos.html">Mis Favoritos</a>
                     </li>
                 </ul>
             </div>
-
         </div>
     </nav>
-
 
     <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
@@ -46,14 +55,13 @@
     </div>
 
     <main class="mt-5 container-lg">
-      <h2 class="text-center fs-1">Favoritos</h2>
+      <h2 class="text-center fs-1" style="color: #4A5D35;">Favoritos</h2>
       <div id="resultado" class="favoritos row"></div>
     </main>
 
-
     <div class="toast-container position-fixed top-0 end-0 p-3">
         <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header bg-danger text-white">
+            <div class="toast-header toast-header-custom text-white">
                 <strong class="me-auto text-white">App Recetas</strong>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
